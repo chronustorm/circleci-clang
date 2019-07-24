@@ -13,6 +13,11 @@ jobs:
           fingerprints:
             - "b6:5a:9b:5f:d6:3e:68:64:5a:4e:81:01:d6:69:6a:08"
 
+      - run:
+          name: Checkout private repository
+          command: >
+            git clone git@github.com:chronustorm/private-test.git
+            
       # run tests!
       - run:
           name: run tests
